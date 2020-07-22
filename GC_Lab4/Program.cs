@@ -23,17 +23,18 @@ namespace GC_Lab4
 
             while (response != "y" && response != "n" )
             {
-                Console.WriteLine("Your entry was invalid.  Please respond (y/n) ");
+                Console.Write("Your entry was invalid.  Please respond (y/n) ");
                 response = Console.ReadLine().ToLower();
             }
 
             if (response == "y")
             {
+                Console.WriteLine("\n");
                 return true;
             }
             else
             {
-                Console.WriteLine("Thanks for using this program.  Goodbye!");
+                Console.WriteLine("\nThanks for using this program.  Goodbye!");
                 return false;
             }
         }
